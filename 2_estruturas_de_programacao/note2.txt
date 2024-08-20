@@ -1,0 +1,84 @@
+Funções
+- São blocos de código a serem executados a fim de gerar alguma resposta
+- São chamadas/invocadas durante os programas
+- É possivel inserir parâmetros na função
+
+function nomeDaFuncao() {
+    // Bloco de código.
+}
+
+nomeDaFuncao();
+nomeDaFuncao(parametro1, parametro2);
+
+- prompt("");
+Recebe um input do usuário do sistema e pode guardar este valor.
+
+---------------
+
+prompt();
+alert();
+Math();
+console.log();
+
+MATH
+- É muito utilizada 
+- Biblioteca/Api com várias funções
+- Funções utilizadas para expressões/calculos matemáticos
+Math.max(1,5,2,3);
+
+CONSOLE.LOG
+-> Exibe uma mensagem na tela, que é o argumento passado.
+-> É muito utilizada.
+
+console.log("mensagem a ser exibida");
+
+---------------
+
+ESTRUTURAS DE CONTROLE
+(IF, ELSE, ELSE IF)
+- Ajuda a modelar o fluxo do programas
+- Dependendo dos valores dos "Statements" e "Expressions" o programa tomará caminhos diferentes.
+
+ESTRUTURA CONDICIONAL (SWITCH)
+- É utilizado quando existe a necessidade de um encadeiamento de IFs
+- Para sair de um Switch/Case basta utilizar o "break;"
+- Pode ser inserida uma expressão default para caso nenhum valor for correspondido.
+- Muitos programadores optam por usar vários 'IFs'
+
+ESTRUTURA DE REPETIÇÃO
+(WHILE, DO WHILE, FOR)
+- A ideia é repetir uma ação até atingir uma condição que foi estabelecida.
+- Ao invés de repetirmos o mesmo código várias vezes, criamos um "Statement" que fará a checagem em cada "loop".
+- "Estrutura de repetição" também é chamada de "Loop".
+
+BREAK
+- Usado para parar um loop antes que complete todo o seu ciclo. (break;)
+
+---------------
+
+IDENTAÇÃO
+- Organizar o código.
+- Não altera na execução do código, apenas deixa mais organizado.
+
+
+CONTINUE
+- Pular apenas uma execução do loop.
+
+FORMA RESUMIDA DE INCREMENTAÇÃO
+x += 3  -> (x = x + 10)
+x++     -> (x = x + 1)
+x--     -> (x = x - 1)
+
+--------------------------------
+
+COMENTARIOS NO JavaScript
+
+- Explicar o que está acontecendo no código, dando instruções diretas.
+- Ser objetivo nos comentários e ir direto ao ponto na explicação. (Exemplo: Falar sobre o resultado que a função está esperando ou falar sobre os parametros usados na função)
+- Quando é necessário explicar muito uma função, quer dizer que ela está mal escrita.
+- Também pode-se comentar, sinalizando algo que foi recentemente implementado para o caso de dar algum problema (bug).
+- O comentário é ignorado pelo interpretador do código.
+- O comentário pode ser exibido no console, então sempre deve tomar cuidado com oque irá comentar (No caso de senhas ou códigos).
+- Poderá ser "Uma linha" ou "Multi linha" (// - /* */).
+
+--------------------------------

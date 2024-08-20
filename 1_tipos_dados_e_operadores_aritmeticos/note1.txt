@@ -1,0 +1,46 @@
++ soma
+- subtração
+/ divisão
+* multiplicação
+% resto da divisão
+
+------------------------------------
+------------------------------------
+------------------------------------
+
+Infinity;
+-Infinity;
+NaN (Not A Number);
+
+---> COMPARAÇÕES
+> maior que
+< menor que 
+>= maior ou igual que
+<= menor ou igual que
+== igual 
+!= diferentes
+=== identicos (mesmo valor e o mesmo tipo de variável)
+
+
+---> OPERADORES LÓGICOS
+&& and
+|| or
+! not
+
+---> OPERADOR TENÁRIO (Boolean)
+Faz um comparatiro em uma linha de código
+Não é muito utilizado e pode deixar o código complicado de ler
+console.log(true ? 1 : 2);
+console.log(false ? 'falso' : 'verdadeiro');
+
+
+---> EMPTY VALUES
+Temos duas palavras reservadas: 'undefined' e 'null'
+Sempre que você se deparar com essas palavras o Javascript que informar que esse valores não existem.
+
+---> CONVERSÃO DE TIPO AUTOMÁTICA
+O Javascript em determinadas operações converte silenciosamente o tipo do resultado final da operação
+console.log(5 * null) --> 0
+console.log("5" - 3) --> 2
+console.log("5" + 1) --> 51
+console.log("dois" * "três") --> NaN

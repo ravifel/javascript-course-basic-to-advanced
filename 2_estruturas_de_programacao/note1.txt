@@ -1,0 +1,49 @@
+Conceitos de Programação
+Estruturas de "Controle", "Repetição", "Funções"
+É dado lógica para o programa
+IF - ELSE - FOR - WHILE - SWITH - FUNTIONS
+
+SOFTWARE <- STATEMENT <- EXPRESSIONS <- EXPRESSION
+
+SOFTWARE: Conjunto de declarações (STATEMENT).
+STATEMENT: Conjunto de expressões (EXPRESSIONS).
+console.log(1 < 2);
+
+EXPRESSION: É todo fragmento de código que produz um valor.
+console.log('Ravi');
+
+----------------------
+
+VARIAVEIS
+(É um "STATEMENT")
+
+---> LET (Tem escopo de bloco)
+
+---> VAR (Tem escopo global)
+
+---> CONST (Não muda. Constante)
+Valores que não devem ser alterados
+
+----------------------
+
+Convenção para os nomes de variáveis:
+- Não pode iniciar o nome de variavel com numero. Mas pode terminar com número;
+- Pode ter apenas os caracteres especiais "$" e "_";
+- Podem ser iniciadas com letras maiúsculas;
+- Podemos usar o "camelCase";
+
+let 3nome;
+let nome3;
+let primeiroNome;
+let Nome;
+let _primeiro_nome;
+let @nome;
+let $nome;
+
+----------------------
+
+Nomes de variáveis reservados
+
+break, case, catch, class, const, continue, debugger, true, false, ...
+Podemos usar essas palavras apenas se for usado mais algum prefixo juntamente com ela "breakRavi" (break)
+
