@@ -1,49 +1,21 @@
-Conceitos de Programação
-Estruturas de "Controle", "Repetição", "Funções"
-É dado lógica para o programa
-IF - ELSE - FOR - WHILE - SWITH - FUNTIONS
+02- Crie uma estrutura IF que verifica a entrada em um evento, se tiver 18 anos ou mais, pode entrar. Armazenar a idade em uma variável com "let". Insira uma instrução "console.log("Pode entrar")", caso a pessoa tenha mais que 18 anos.
 
-SOFTWARE <- STATEMENT <- EXPRESSIONS <- EXPRESSION
+03- Crie uma constante com o seu nome e depois verifique se o seu nome é realmente oque está na constante, usando uma estrutura conficional "IF". Caso for igual, emita uma mensagem de saudação com "console.log()".
 
-SOFTWARE: Conjunto de declarações (STATEMENT).
-STATEMENT: Conjunto de expressões (EXPRESSIONS).
-console.log(1 < 2);
+04- Teste a função "Math.pow()" com o "console.log" utilizando as seguintes bases: 2, 3, 18 e o expoente deve ser o 2.
+Observação: A função "Math.pow()" exibe a potencia de um número, recebendo 2 argumentos: a base e o expoente respectivamente. (Exemplo: Math.pow(5,3);)
 
-EXPRESSION: É todo fragmento de código que produz um valor.
-console.log('Ravi');
+05- Armazene a velocidade de um carro em uma variável, com o número que desejar. Faça uma estrutura "If/Else" que verifica se ele está a cima da velocidade máxima permitida que é 80. Se estiver acima ou abaixo da velocidade permitida devem ser exibidas mensagens no "console.log()".
 
-----------------------
+06- Faça uma estrutura "If/Else" para verificar se um usuário pode dirigir. Armazene em variáveis diferentes alguma sinformações sobre o usuário (idade e se ele tem CNH).
+Se a idade for maior que 18 anos e não possuir CNH, exiba uma mensagem.
+Se a idade for maior que 18 e tem CNH, exiba uma mensagem.
+Se a idade for inferior a 18 anos e não tiver CNH, exiba outra mensagem.
 
-VARIAVEIS
-(É um "STATEMENT")
+07- Exibir um loop "While" que exiba números de 0 a 10 no "console.log()".
 
----> LET (Tem escopo de bloco)
+08- Escreva um loop "For" que exibe números de 100 a 50 no "console.log()".
 
----> VAR (Tem escopo global)
+09- Escreva um loop "For" ou "While" que exiba qual o número é par e qual número é impar. O contador deve iniciar de 0 e ir até 50.
 
----> CONST (Não muda. Constante)
-Valores que não devem ser alterados
-
-----------------------
-
-Convenção para os nomes de variáveis:
-- Não pode iniciar o nome de variavel com numero. Mas pode terminar com número;
-- Pode ter apenas os caracteres especiais "$" e "_";
-- Podem ser iniciadas com letras maiúsculas;
-- Podemos usar o "camelCase";
-
-let 3nome;
-let nome3;
-let primeiroNome;
-let Nome;
-let _primeiro_nome;
-let @nome;
-let $nome;
-
-----------------------
-
-Nomes de variáveis reservados
-
-break, case, catch, class, const, continue, debugger, true, false, ...
-Podemos usar essas palavras apenas se for usado mais algum prefixo juntamente com ela "breakRavi" (break)
-
+10- Verifique se o número é primo. Um número primo é um número maior que 1 e apenas divisível por sí próprio e por 1.
