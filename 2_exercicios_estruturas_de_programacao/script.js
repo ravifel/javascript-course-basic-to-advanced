@@ -137,3 +137,165 @@ for (let i = 1; i <= 50; i++) {
         console.log(`O número ${i} não é primo`);
     }
 }
+
+//---------------------------------------
+//01
+let a = 10;
+let b = 5;
+let c = 20;
+if (a + b < c) {
+    console.log(`A soma de ${a} + ${b} é menor que ${c}.`);
+} else {
+    console.log(`A soma de ${a} + ${b} é maior que ${c}.`);
+}
+
+// 02°
+let nome02 = "Ravi Felipe";
+let sexo = "F";
+let estadoCivil = "CASADA";
+let tempoDeCasamento = 0;
+if (sexo == "F" && estadoCivil == "CASADA") {
+    tempoDeCasamento = prompt("Qual o tempo de casamento?");
+    console.log(`O tempo de casamento de ${nome02} é ${tempoDeCasamento} anos`);
+}
+
+// 03°
+let numero = 11;
+if (numero % 2 == 0) {
+    console.log(`o número ${numero} é par`);
+} else {
+    console.log(`o número ${numero} é impar`);
+}
+
+// 04°
+let valorA = 10;
+let valorB = 11;
+if (valorA == valorB) {
+    let soma = valorA + valorB;
+    console.log(`A soma dos valores ${valorA} + ${valorB} é ${soma}`);
+} else {
+    let multiplicacao = valorA * valorB;
+    console.log(`A multiplicação dos valores ${valorA} * ${valorB} é ${multiplicacao}`);
+}
+
+// 05°
+let numeroB = -10;
+if (numeroB > 0) {
+    let dobroDoNumero = numeroB * 2;
+    console.log(`O dobro do número ${numeroB} é ${dobroDoNumero}`);
+} else if (numeroB < 0) {
+    let triploDoNumero = numeroB * 3;
+    console.log(`O triplo do número ${numeroB} é ${triploDoNumero}`);
+}
+
+// 06°
+let valueBooleanA = true;
+let valueBooleanB = false;
+if (valueBooleanA == true && valueBooleanB == true) {
+    console.log('Ambos os valores são TRUE')
+} else if (valueBooleanA == false && valueBooleanB == false) {
+    console.log('Ambos os valores são FALSE');
+} else if (valueBooleanA == true && valueBooleanB == false) {
+    console.log(`O valor A é TRUE e o valor B é FALSE`);
+} else if (valueBooleanA == false && valueBooleanB == true) {
+    console.log(`O valor A é FALSE e o valor B é TRUE`);
+}
+
+// 07°
+let numeroC = 11;
+if (numeroC % 2 == 0) {
+    let soma = numeroC + 5;
+    console.log(`A soma de ${numeroC} + 5 é ${soma}. ${numeroC} é PAR.`)
+} else {
+    let soma = numeroC + 8;
+    console.log(`A soma de ${numeroC} + 8 é ${soma}. ${numeroC} é ÍMPAR.`)
+}
+
+// 08°
+let x = 10;
+let y = 20;
+let z = 30;
+if (x >= y && x >= z && y >= z) {
+    console.log(`A ordem decrescente é: ${x}, ${y}, ${z}`);
+} else if (x >= y && x >= z && z >= y) {
+    console.log(`A ordem decrescente é: ${x}, ${z}, ${y}`);
+} else if (y >= x && y >= z && x >= z) {
+    console.log(`A ordem decrescente é: ${y}, ${x}, ${z}`);
+} else if (y >= x && y >= z && z >= x) {
+    console.log(`A ordem decrescente é: ${y}, ${z}, ${x}`);
+} else if (z >= x && z >= y && x >= y) {
+    console.log(`A ordem decrescente é: ${z}, ${x}, ${y}`);
+} else if (z >= x && z >= y && y >= x) {
+    console.log(`A ordem decrescente é: ${z}, ${y}, ${x}`);
+}
+
+// 09°
+let alturaPessoa01 = 1.81;
+let sexoPessoa01 = 'MASCULINO';
+if (sexoPessoa01 == 'MASCULINO') {
+    let pesoIdealMasculino = (72.7 * alturaPessoa01) - 58;
+    console.log(`Tendo em vista que a pessoa é do sexo masculino, o peso ideal é ${pesoIdealMasculino}`);
+} else if (sexoPessoa01 == 'FEMININO') {
+    let pesoIdealFeminino = (61.1 * alturaPessoa01) - 44.7;
+    console.log(`Tendo em vista que a pessoa é do sexo masculino, o peso ideal é ${pesoIdealFeminino}`);
+} else {
+    console.log(`Insira o 'sexo' novamente.`)
+}
+
+// 10°
+let alturaPessoa02 = 1.81;
+let pesoPessoa02 = 89.00;
+let imcPessoa02 = pesoPessoa02 / (alturaPessoa02 ** 2);
+console.log(`Olá! O seu IMC é: ${imcPessoa02}`);
+if (imcPessoa02 < 18.5) {
+    console.log('Abaixo do peso!');
+} else if (imcPessoa02 >= 18.5 && imcPessoa02 < 25) {
+    console.log('Peso normal');
+} else if (imcPessoa02 >= 25 && imcPessoa02 < 30) {
+    console.log('Acima do peso');
+} else if (imcPessoa02 >= 30) {
+    console.log('Obeso');
+}
+
+// 11°
+let precoInicialProduto = 100;
+let etiqueta = 3;
+
+const etiqueta1Avista = 0.10; //Desconto
+const etiqueta2CartaoAvista = 0.15; //Desconto
+const etiqueta3Cartao2Vezes = 0; //Preço normal
+const etiqueta4Cartao2Vezes = 0.10; //Acrescimo, Juros
+
+if (etiqueta == 1) {
+    let precoFinalProduto = precoInicialProduto - (precoInicialProduto * etiqueta1Avista);
+    console.log(`Teve um desconto para esse produto. Antes o valor era ${precoInicialProduto} e agora passou a ser ${precoFinalProduto}. A etiqueta escolhida foi a de N°${etiqueta}.`);
+} else if (etiqueta == 2) {
+    let precoFinalProduto = precoInicialProduto - (precoInicialProduto * etiqueta2CartaoAvista);
+    console.log(`Teve um desconto para esse produto. Antes o valor era ${precoInicialProduto} e agora passou a ser ${precoFinalProduto}. A etiqueta escolhida foi a de N°${etiqueta}.`);
+} else if (etiqueta == 3) {
+    let precoFinalProduto = precoInicialProduto - (precoInicialProduto * etiqueta3Cartao2Vezes);
+    console.log(`Não houve desconto para esse produto. O valor do produto é ${precoFinalProduto}. A etiqueta escolhida foi a de N°${etiqueta}.`);
+} else if (etiqueta4Cartao2Vezes) {
+    let precoFinalProduto = precoInicialProduto + (precoInicialProduto * etiqueta4Cartao2Vezes);
+    console.log(`Teve um acréscimo para esse produto. Antes o valor era ${precoInicialProduto} e agora passou a ser ${precoFinalProduto}. A etiqueta escolhida foi a de N°${etiqueta}.`);
+}
+
+// 12°
+let codigoAluno = 1234;
+let notaAvaliacao1 = 70;
+let notaAvaliacao2 = 70;
+let notaAvaliacao3 = 70;
+let mediaExerciciosAluno = 70;
+let mediaAproveitamentoConceito = ((notaAvaliacao1 + (notaAvaliacao2 * 2) + (notaAvaliacao3 * 3) + mediaExerciciosAluno) / 7).toFixed(2);
+console.log(`A Média de Aproveitamento do aluno ${codigoAluno} foi ${mediaAproveitamentoConceito}.`);
+if (mediaAproveitamentoConceito >= 90) {
+    console.log('O aluno foi Aprovado! Classificação A.');
+} else if (mediaAproveitamentoConceito >= 75 && mediaAproveitamentoConceito < 90) {
+    console.log('O aluno foi Aprovado! Classificação B.');
+} else if (mediaAproveitamentoConceito >= 60 && mediaAproveitamentoConceito < 75) {
+    console.log('O aluno foi Aprovado! Classificação C.');
+} else if (mediaAproveitamentoConceito >= 40 && mediaAproveitamentoConceito < 60) {
+    console.log('O aluno foi Reprovado! Classificação D.');
+} else if (mediaAproveitamentoConceito < 40) {
+    console.log('O aluno foi Reprovado! Classificação E.');
+}
