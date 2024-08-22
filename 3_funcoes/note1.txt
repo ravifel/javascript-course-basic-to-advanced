@@ -1,0 +1,52 @@
+FUNÇÕES
+- Estruturas de códigos menores que são reaproveitadas durante a execução/construção de um programa;
+- Principal objetivo: poupar repetição de código;
+- Podem ser consideradas 'subprogramas';
+- Declarar com a palavra 'function';
+- Deve ter um nome;
+- Pode conter argumentos/parâmetros, definidos entre ();
+- O corpo da função é definido entre {};
+- Geralmente uma função retorna um valor;
+- É possível declarar funções em variáveis;
+- As variáveis das funções só ficam visiveis no escopo da função;
+
+function testeFuncao(parametro) {
+
+return x;
+}
+
+--------------------------------------------------------------------
+
+ARROW FUNCTIONS
+- É uma outra forma de escrever funções;
+- É bem utilizada nos frameworks (React, Vue, Angular);
+- Porém não deve substituir as "function" por completo;
+- É necessário que a "arrow function" esteja atrelada a uma variável;
+
+- Se só tem um parâmetro podemos remover os parênteses do argumento e o return;
+- Se a expressão for pequena, pode até ser feita em uma linha sem prejudicar a leitura do código. Caso essa maneira de escrita prejudique a legibilidade do código não deve-se fazer, pois a prioridade sempre é a legibilidade do código.
+
+--------------------------------------------------------------------
+
+ARGUMENTOS OPCIONAIS
+- Podemos chamar uma função em JS sem o número igual de pârametros determinados.
+
+ARGUMENTOS COM VALOR DEFAULT
+- Podemos pre-determinar um valor para um argumento;
+- Caso não seja passado algum argumento ao invocar a função, esse argumento assumira o valor Default;
+
+--------------------------------------------------------------------
+
+CLOSURE
+- Uma função que se lembra do ambiente em que ela foi criada. Lembra do escopo lexico da função;
+- Quando se usa o 'Closure' a função sempre irá retornar uma outra função;
+- É uma função que vai retornar outra função;
+- É bem utilizado para simular metodos privados no JavaScript (Conceito utilizado em POO);
+- É um conceito mais avançado;
+
+--------------------------------------------------------------------
+
+RECURSION
+- Uma funcionalidade que permite uma função se chamar novamente;
+- Isso pode ser um problema caso a função se chame muitas vezes. Pois pode prejudicar a performance;
+- Deixa o código um pouco mais complicado de entender;

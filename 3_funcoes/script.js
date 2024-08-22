@@ -1,139 +1,169 @@
-//Exercicio 01
-let nome = "Ravi Felipe";
-console.log(`Nome: ${nome} = ${typeof (nome)}`);
-const sobrenome = "Silva"
-console.log(`Sobrenome: ${sobrenome} = ${typeof (sobrenome)}`);
-
-let idade = 22;
-console.log(`Idade: ${idade} = ${typeof (idade)}`);
-const telefone = 988887777;
-console.log(`Telefone: ${telefone} = ${typeof (telefone)}`);
-
-let temCarro = false;
-console.log(`Tem carro: ${temCarro} = ${typeof (temCarro)}`);
-const temPet = true;
-console.log(`Tem pet: ${temPet} = ${typeof (temPet)}`);
-
-//Exercicio 02
-let idadePessoa = 18;
-if (idadePessoa >= 18) {
-    console.log("Pode entrar no evento! Sua idade é superior a 18 anos.");
-} else {
-    console.log("Não pode entrar no evento. Só é permitida a entrada de maiores de 17 anos.");
+function escreverNoConsole() {
+    console.log("Escrevendo no console!");
 }
+escreverNoConsole();
 
-//Exercicio 03
-let nome01 = "Ravi Felipe";
-if (nome01 == "Ravi Felipe") {
-    console.log(`Olá, bem-vindo ${nome01}`);
-} else {
-    console.log("O seu nome está incorreto. Tente novamente.");
+const textoNoConcole = function () {
+    console.log("Texto no console");
 }
+textoNoConcole();
 
-//Exercicio 04
-//Bases: 2, 3, 18 - Expoente: 2.
-let potenciaDe2 = Math.pow(2, 2);
-console.log(potenciaDe2);
-let potenciaDe3 = Math.pow(3, 2);
-console.log(potenciaDe3);
-let potenciaDe18 = Math.pow(18, 2);
-console.log(potenciaDe18);
-
-//Exercicio 05
-let verlocidadeAtual = 80;
-let velocidadePermitida = 80;
-if (verlocidadeAtual > velocidadePermitida) {
-    console.log(`A sua velocidade atual está acima do limite de velocidade. Você acabou de levar uma multa. Velocidade Atual: ${verlocidadeAtual}.`)
-} else if (verlocidadeAtual < (velocidadePermitida / 2)) {
-    console.log(`A sua velocidade atual está abaixo do limite de velocidade permitido. Você acabou de levar uma multa. Velocidade Atual: ${verlocidadeAtual}.`)
-} else {
-    console.log(`A sua velocidade está dentro do limite permitido! Velocidade Atual: ${verlocidadeAtual}`)
+const textoPorParametro = function (texto) {
+    console.log(texto);
 }
+textoPorParametro("Olá, Ravi! Bem-vindo");
 
-//Exercicio 06
-const idadePermitidaMotorista = 18;
-let idadeMotorista = 18;
-let temCNH = true;
-if (idadeMotorista >= idadePermitidaMotorista && temCNH == false) {
-    console.log(`O usuário não poderá dirigir pois não possui CNH.`)
-} else if (idadeMotorista >= idadePermitidaMotorista && temCNH == true) {
-    console.log(`O usuário pode dirigir pois a sua idade é superior a ${idadePermitidaMotorista} e possui CNH.`)
-} else {
-    console.log(`O usuário não poderá dirigir. Pois não atende aos requisitos de idade ou de possuir uma CNH.`);
+function imprimirUmNumero(numero) {
+    console.log(`O número é 2 ${numero}`);
 }
+imprimirUmNumero(33);
 
-//Exercicio 07
-let incremento1 = 0;
-while (incremento1 <= 10) {
-    console.log(incremento1);
-    incremento1++;
+function numeroAleatorio() {
+    let numeroAleatorio = Math.random().toFixed(2);
+    console.log(numeroAleatorio);
 }
+numeroAleatorio();
 
-let incremento2 = 10;
-while (incremento2 >= 0) {
-    console.log(incremento2);
-    incremento2--;
+//RETURN
+function soma(a, b) {
+    return a + b;
 }
+console.log(soma(3, 5));
 
-//Exercicio 08
-for (let i = 100; i >= 50; i--) {
-    console.log(`N° ${i}`);
+function saudacao(nome) {
+    if (nome == 'Ravi') {
+        return `Olá ${nome}`;
+    }
 }
+console.log(saudacao('Ravi'));
 
-//Exercicio 09
-console.log('Resolução usando a estrutura FOR');
-for (let i = 0; i <= 50; i++) {
-    if (i % 2 == 0) {
-        console.log(`O número ${i} é PAR`);
+function podeDirigir(idade, temCnh) {
+    if (idade >= 18 && temCnh == true) {
+        console.log('Pode dirigir!');
     } else {
-        console.log(`O número ${i} é ÍMPAR`);
+        console.log('Não pode dirigir.');
     }
 }
+podeDirigir(18, true);
+podeDirigir(17, 0);
+podeDirigir(18, 0);
+podeDirigir(16, 1);
 
-let incremento3 = 0;
-console.log('Resolução usando a estrutura WHILE');
-while (incremento3 <= 50) {
-    if (incremento3 % 2 == 0) {
-        console.log(`O número ${incremento3} é PAR`);
+//ARROW FUNCTIONS
+const parOuImpar = (numero) => {
+    return numero % 2;
+}
+parOuImpar(3);
+
+let consoleTeste = () => {
+    console.log("Hellor world!")
+}
+consoleTeste();
+
+let consoleTesteSaudacao = (nome) => {
+    return console.log(`Olá ${nome}!`);
+}
+consoleTesteSaudacao('Ravi');
+
+const raizQuadrada1 = (x) => {
+    return x * x;
+}
+
+const raizQuadrada2 = n => n * n;
+console.log(raizQuadrada1(2));
+console.log(raizQuadrada2(4));
+
+//ARGUMENTOS OPCIONAIS
+function nomeComIdade(nome, idade) {
+    if (idade === undefined) {
+        console.log(`O seu nome é ${nome}.`);
     } else {
-        console.log(`O número ${incremento3} é ÍMPAR`);
-    }
-    incremento3++;
-}
-
-//Exercicio 10 (Desafio)
-let numeroPrimo = 41;
-let divisoes = 0;
-
-for (let i = 1; i <= numeroPrimo; i++) {
-    if (numeroPrimo % i == 0) {
-        divisoes++;
+        console.log(`O seu nome é ${nome} e você tem ${idade} anos.`)
     }
 }
-console.log(`Divisoes: ${divisoes}`);
+nomeComIdade('Ravi');
+nomeComIdade('Ravi', 22);
 
-if (divisoes == 2) {
-    console.log(`O número ${numeroPrimo} é PRIMO.`);
-} else {
-    console.log(`O número ${numeroPrimo} não é primo`);
-}
-
-//(Todos os números dentro de um intervalo)
-for (let i = 1; i <= 50; i++) {
-    let divisoes2 = 0;
-
-    //Quantidade de divisões dos números
-    for (let x = 1; x <= i; x++) {
-        if (i % x == 0) {
-            divisoes2++;
-        }
-    }
-    console.log(`Divisoes: ${divisoes2}`);
-
-    //Checando se é primo
-    if (divisoes2 == 2) {
-        console.log(`O número ${i} é PRIMO.`);
+function soma(a, b) {
+    if (a === undefined || b === undefined) {
+        console.log('Essa função precisa ter os 2 argumentos.')
     } else {
-        console.log(`O número ${i} não é primo`);
+        return a + b;
     }
 }
+console.log(soma(1));
+
+//ARGUMENTOS COM VALOR DEFAULT
+function repetirFrase(frase, n = 2) {
+    for (let x = 1; x <= n; x++) {
+        console.log(`${frase} ${x}`);
+    }
+}
+repetirFrase('Testando', 5);
+repetirFrase('Só duas vezes');
+
+function calculaPotencia(base, expoente = 2) {
+    let potencia = Math.pow(base, expoente);
+    return console.log(potencia);
+}
+calculaPotencia(2);
+calculaPotencia(2, 2);
+calculaPotencia(2, 3);
+
+//CLOSURE
+function armazenarSoma(x) {
+
+    //return y => x + y
+    return function (y) {
+        return x + y;
+    }
+}
+let soma1 = armazenarSoma(2);
+console.log(soma1(5));
+
+let soma2 = armazenarSoma(5);
+console.log(soma2(7));
+
+function contador(i) {
+    let cont = i;
+    let somarContador = function () {
+        console.log(cont);
+        cont++;
+    }
+    return somarContador;
+}
+let meuContador = contador(5);
+meuContador();
+meuContador();
+meuContador();
+let meuContador2 = contador(1);
+meuContador2();
+meuContador2();
+meuContador2();
+
+//RECURSION
+function retornarNumeroPar(n) {
+    if (n % 2 == 0) {
+        console.log(`n agora é par: ${n}`);
+    } else {
+        console.log(n);
+        retornarNumeroPar(n - 1);
+    }
+}
+retornarNumeroPar(33);
+
+function recursao(numero) {
+    if (numero - 1 <= 2) {
+        console.log('Recursão parou.');
+    } else if (numero % 2 != 0) {
+        console.log(`Número ${numero} é ímpar.`);
+        recursao(numero - 1);
+    } else {
+        console.log(`Número ${numero} é par.`);
+        console.log(numero);
+        recursao(numero - 2);
+    }
+}
+recursao(10);
+recursao(39);
+recursao(55);
