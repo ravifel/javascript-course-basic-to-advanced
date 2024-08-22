@@ -19,3 +19,17 @@
 09- Elabore um programa que receba até 5 números e no final mostre quantos números negativos foram digitados.
 
 10- Desenvolva um programa em que o usuário digite um número e o programa mostre o fatorial desse número.
+
+11- Elabore um programa em que realize o cadastro de homens e mulheres, suas idades e a cor do cabelo. No final mostre o total de homens com mais de 18 anos e cabelos castanhos e o total de mulheres entre 25 e 30 anos e cabelos loiros. (Menu da cor do cabelo: Preto, Castanho, Loiro, Ruivo.)
+
+12- Construa um programa em que conte de 0 até 10 e de 10 até zero.
+
+13- Crie um programa em que o usuário digite um valor e o programa apresente apenas os valores pares da contagem progressiva até o valor digitado e os valores pares da contagem regressiva partindo do valor digitado.
+
+14- Desenvolva um programa em que o usuário digite até 6 valores e no final o programa apresente o total desses valores entre 0 e 10; e a soma desses valores entre 0 e 10 que forem ímpares.
+
+15- Elabore um programa em que mostre combinações de 3 valores (1, 2, 3) agrupado de 2 em 2.
+
+16- Construa um programa em que mostre 10 primeiros números da sequência de Fibonacci.
+
+17- Faça um programa em que o usuário digite 5 valores e no final ele apresente: a soma dos valores, a média dos valores, quantos valores são divisíveis por 5, quantos valores são nulos e a soma dos valores pares.

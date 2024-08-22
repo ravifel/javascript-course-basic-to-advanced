@@ -415,4 +415,116 @@ let resultadoFatorial = numeroEscolhido;
 for (let i = 1; i < numeroEscolhido; i++) {
     resultadoFatorial = resultadoFatorial * i;
 }
-console.log(resultadoFatorial);
+console.log(`O fatorial de ${numeroEscolhido} é igual a ${resultadoFatorial}`);
+
+// 11º
+let totalHomensMais18 = 0;
+let totalMulheres25e30 = 0;
+let totalParticipantes = 5;
+for (let i = 1; i <= totalParticipantes; i++) {
+    let sexo = prompt(`Digite o sexo da ${i}° pessoa (M ou F):`);
+    let idade = parseInt(prompt(`Digite a idade da ${i}° pessoa:`));
+    let corDoCabelo = parseInt(prompt(`Digite a cor do cabelo da ${i}° pessoa ((1)Preto - (2)Castanho - (3)Loiro - (4)Ruivo)`));
+    if (sexo == 'M' && idade > 18 && corDoCabelo == 2) {
+        totalHomensMais18++;
+    } else if (sexo == 'F' && idade > 25 && idade < 30 && corDoCabelo == 3) {
+        totalMulheres25e30++;
+    }
+}
+console.log(`O total de homens com mais de 18 anos é: ${totalHomensMais18}`);
+console.log(`O total de mulheres entre 25 e 30 anos com os cabelos loiros é ${totalMulheres25e30}`);
+
+// 12°
+for (let i = 0; i <= 10; i++) {
+    console.log(i);
+    if (i == 10) {
+        for (let x = 10; x >= 0; x--) {
+            console.log(x)
+        }
+    }
+}
+
+// 13º
+let valorD = 5;
+for (let i = 0; i <= valorD; i++) {
+    if (i % 2 == 0) {
+        console.log(i);
+    } else if (i == valorD) {
+        for (let x = valorD; x >= 0; x--) {
+            if (x % 2 == 0) {
+                console.log(x);
+            }
+        }
+    }
+}
+
+// 14°
+let totalValoresEntre0e10 = 0;
+let somaValoresEntre0e10Impares = 0;
+for (let i = 0; i < 6; i++) {
+    let valor = parseInt(prompt(`Digite o ${i}° valor:`));
+    if (valor >= 0 && valor <= 10) {
+        totalValoresEntre0e10++;
+        if (valor % 2 != 0) {
+            somaValoresEntre0e10Impares = somaValoresEntre0e10Impares + valor;
+        }
+    }
+}
+console.log(`O total de valores entre 0 e 10 é ${totalValoresEntre0e10}.`);
+console.log(`O somatório dos valores ímpares entre 0 e 10 é ${somaValoresEntre0e10Impares}`);
+
+// 15º
+for (let i = 1; i <= 3; i++) {
+    for (let x = 3; x >= 1; x--) {
+        console.log(`${i} - ${x}`);
+    }
+    console.log(" ")
+}
+
+// 16°
+let numero1Fibonacci = 1;
+let numero2Fibonacci = 1;
+let proximoNumeroFibonacci = 0;
+console.log(numero1Fibonacci)
+for (let i = 1; i <= 10; i++) {
+    if (i == 1) {
+        numero1Fibonacci = i;
+        console.log(numero1Fibonacci);
+    } else if (i == 2) {
+        numero2Fibonacci = i;
+        console.log(numero2Fibonacci);
+    } else if (i >= 3) {
+        proximoNumeroFibonacci = numero1Fibonacci + numero2Fibonacci;
+        console.log(proximoNumeroFibonacci);
+        numero1Fibonacci = numero2Fibonacci;
+        numero2Fibonacci = proximoNumeroFibonacci;
+    }
+
+}
+
+// 17º
+let somaValoresQ17 = 0;
+let somaValoresParesQ17 = 0;
+let mediaValoresQ17 = 0;
+let totalValoresDivisiveisPor5 = 0;
+let totalValoresNulos = 0;
+for (let i = 0; i < 5; i++) {
+    let valor = parseInt(prompt(`Digite o ${i + 1}º valor:`));
+    somaValoresQ17 = somaValoresQ17 + valor;
+    if (valor % 5 == 0) {
+        totalValoresDivisiveisPor5++;
+        if (valor % 2 == 0) {
+            somaValoresParesQ17 = somaValoresParesQ17 + valor;
+        }
+    } else if (valor == 0) {
+        totalValoresNulos++;
+    } else if (valor % 2 == 0) {
+        somaValoresParesQ17 = somaValoresParesQ17 + valor;
+    }
+}
+mediaValoresQ17 = somaValoresQ17 / 5;
+console.log(`A soma dos valores digitados é: ${somaValoresQ17}`);
+console.log(`A soma dos valores pares é: ${somaValoresParesQ17}`);
+console.log(`A média dos valores digitados é: ${mediaValoresQ17}`);
+console.log(`O total de valores divisíveis por 5 é: ${totalValoresDivisiveisPor5}`);
+console.log(`O total de valores nulos é: ${totalValoresNulos}`);
