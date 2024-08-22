@@ -138,7 +138,7 @@ for (let i = 1; i <= 50; i++) {
     }
 }
 
-//---------------------------------------
+//Lista de Exercicio Estruturas Condicionais
 //01
 let a = 10;
 let b = 5;
@@ -155,7 +155,7 @@ let sexo = "F";
 let estadoCivil = "CASADA";
 let tempoDeCasamento = 0;
 if (sexo == "F" && estadoCivil == "CASADA") {
-    tempoDeCasamento = prompt("Qual o tempo de casamento?");
+    //tempoDeCasamento = prompt("Qual o tempo de casamento?");
     console.log(`O tempo de casamento de ${nome02} é ${tempoDeCasamento} anos`);
 }
 
@@ -299,3 +299,120 @@ if (mediaAproveitamentoConceito >= 90) {
 } else if (mediaAproveitamentoConceito < 40) {
     console.log('O aluno foi Reprovado! Classificação E.');
 }
+
+
+
+//Lista de Exercicio Estruturas de Repetição
+// 01°
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+// 02°
+let quantidadeContagem = 20;
+let incremento = 10;
+while (incremento <= quantidadeContagem) {
+    console.log(incremento)
+    incremento++;
+}
+
+// 03°
+let somaTotalValores = 0;
+for (let i = 0; i < 5; i++) {
+    let valor = parseInt(prompt(`Digite o ${i}° valor.`));
+    somaTotalValores = somaTotalValores + valor;
+    console.log(somaTotalValores);
+}
+console.log(`A soma total dos valores difitados foi ${somaTotalValores}`);
+
+// 04°
+let somatorioValoresDigitados = 0;
+let maiorValorDigitado = 0;
+let menorValorDigitado = 0;
+
+for (let i = 0; i < 5; i++) {
+    let valor = parseInt(prompt(`Digite o valor ${i}`));
+    console.log(`O valor ${i} é o ${valor}`);
+    somatorioValoresDigitados = somatorioValoresDigitados + valor
+    if (i == 0) {
+        maiorValorDigitado = valor;
+        menorValorDigitado = valor;
+    } else if (valor > maiorValorDigitado) {
+        maiorValorDigitado = valor;
+    } else if (valor < menorValorDigitado) {
+        menorValorDigitado = valor;
+    }
+}
+console.log(`Somatório dos valores digitados: ${somatorioValoresDigitados}`)
+console.log(`Maior valor digitado: ${maiorValorDigitado}`);
+console.log(`Menor valor di=gitado: ${menorValorDigitado}`);
+
+// 05°
+let quantidadeDeConversoes = 2;
+let valorDolar = 5.48;
+for (let i = 0; i < quantidadeDeConversoes; i++) {
+    let valor = parseFloat(prompt(`Digite o ${i + 1}° valor em real:`));
+    let conversao = valor * valorDolar;
+    console.log(`A conversão do valor ${valor} para dólar é ${conversao}`);
+}
+
+
+// 06°
+let valorInicial = 30;
+let valorFinal = 20;
+if (valorFinal > valorInicial) {
+    console.log('Contagem progressiva')
+    for (let i = valorInicial; i <= valorFinal; i++) {
+        console.log(i);
+    }
+} else if (valorInicial > valorFinal) {
+    console.log('Contagem regressiva');
+    for (let i = valorInicial; i >= valorFinal; i--) {
+        console.log(i);
+    }
+}
+
+// 07°
+let quantidadeTotalDeAlunos = 3;
+let nomeAlunoMelhorNota;
+let melhorNota;
+for (let i = 0; i < quantidadeTotalDeAlunos; i++) {
+    let nomeAluno = prompt(`Digite o nome do ${i + 1}° aluno:`);
+    let notaAluno = parseFloat(prompt(`Digite a nota do aluno ${nomeAluno}`));
+    if (i == 0) {
+        nomeAlunoMelhorNota = nomeAluno;
+        melhorNota = notaAluno;
+    } else if (notaAluno > melhorNota) {
+        melhorNota = notaAluno;
+        nomeAlunoMelhorNota = nomeAluno;
+    }
+}
+console.log(`O aluno ${nomeAlunoMelhorNota} teve a melhor nota: ${melhorNota}. Parabéns ${nomeAlunoMelhorNota}!`);
+
+// 08°
+let numeroEscolhidoPeloUsuario = 8;
+for (let i = 1; i <= 10; i++) {
+    console.log(`${numeroEscolhidoPeloUsuario} x ${i} = ${numeroEscolhidoPeloUsuario * i}`);
+}
+
+// 09°
+let totalNumerosNegativos = 0;
+let totalNumerosPositivos = 0;
+for (let i = 0; i < 5; i++) {
+    let numero = parseFloat(prompt(`Digite o ${i + 1}° número:`));
+    if (numero > 0) {
+        totalNumerosPositivos++;
+    } else if (numero < 0) {
+        totalNumerosNegativos++;
+    }
+}
+console.log(`Total de números positivos: ${totalNumerosPositivos}`);
+console.log(`Total de números negativos: ${totalNumerosNegativos}`);
+
+// 10°
+let numeroEscolhido = 10;
+let resultadoFatorial = numeroEscolhido;
+for (let i = 1; i < numeroEscolhido; i++) {
+    resultadoFatorial = resultadoFatorial * i;
+}
+console.log(resultadoFatorial);
