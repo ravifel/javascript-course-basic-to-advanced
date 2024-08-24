@@ -1,0 +1,25 @@
+01- Escreva uma função que imprime "Hello World!" no console.
+
+02- Escreva uma função que recebe um parâmetro de idade. E imprima esta mensagem no console com template literals dizendo "Você tem x anos".
+
+03- Escreva uma função que some 2 números e retorne eles. Depois imprima este retorno.
+
+04- Escreva uma função que retorne um número aleatório. O número máximo retornado deve ser passado via parâmetro. (Math.random()).
+
+05- Escreva uma função que recebe a idade de uma pessoa. Se ela tiver mais de 18 anos ela pode entrar na auto escola, imprima uma mensagem informando isso. Se ela tiver menos, ela não pode, imprima outra mensagem com este aviso. Execute a função nos dois casos.
+
+06- Escreva uma função que detecta o tipo de dado passado. Verifique se é um "number", "boolean" ou "string" e retorne uma mensagem para cada tipo. Execute uma função para cada caso.
+
+07- Escreva uma função que receba um número negativo e retorne um número positivo. Dica: Utilize a função 'Math.abs()'.
+
+08- Escreva uma função que recebe uma string. Se o texto conter mais de 10 caracteres imprima "Texto muito longo". Se conter menos, imprima "Texto dentro do limite".
+
+09- Escreva uma função que receba dois números, o primeiro é a base e o segundo é a potência. Depois faça essa operação e retorne o resultado. (Exemplo: 3,2 = 9).
+
+10- Escreva uma função que recebe um número, e o decrementa de 1 em 1 com um loop. Além disso imprima somente os números pares no console.
+
+11- Escreva uma função que gere a tabuada de um número que foi passado como parâmetro na função.
+
+12 - Crie uma função chamada soma que aceita três números como argumentos. Retorne a soma dos três números. Crie uma variável chamada resultado. Ela deve conter o retorno da função, passe os números 5, 10 e 15 como argumento.
+
+13-Crie uma função chamada faixaEtaria que aceita um argumento chamado idade. Identifique três faixas etárias: Criança (menor que 12 anos), Jovem (12 a 24 anos), Adulto (Maior que 25 anos). Execute a função duas vezes e encapsule os resultados em variáveis diferentes. Uma variável deve ter o nome de crianca e enviar como argumento uma idade de criança. A outra o nome adulto e uma idade de adulto para executar a função criada.
