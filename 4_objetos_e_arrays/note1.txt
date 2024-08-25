@@ -1,0 +1,30 @@
+OBJETOS E ARRAYS
+- São 2 tipos de dados ou Estruturas de dados.
+- Servem para guardar informações bastantes detalhadas de um item ou vários itens em uma variável só.
+(Objetos) -> A programação Orientada a objetos é baseada em objetos
+(Arrays) -> E as listas quandos muitos itens precisam ser adicionados em um lugar utilizamos os Arrays
+
+---------------------------------------------
+ARRAYS
+- Possibilidade de adicionar um conjunto de valores a uma variável.
+- O array deve ser escrito entre colchetes, separando os valores por vírgulas.
+
+- É mais comum ter o mesmo tipo de dado dentro de um Array (Lista de nomes, Lista de busca, Lista de produtos, Lista de preços).
+- Não tem restrições quanto ao tipo de dado.
+- A contagem começa do zero. O primeiro indice é sempre o zero.
+
+Para pegar o último elemento do array:
+array(array.length - 1);
+
+---------------------------------------------
+PROPRIEDADES
+
+- Propriedades são informações que podem ser verificadas de um valor.
+- Quase todos os valores de JavaScript tem propriedades, menos  nulll e undefined.
+- Podemos acessar as propriedades de duas maneiras.
+
+---------------------------------------------
+MÉTODOS
+
+- Métodos são propriedades que funcionam como funções.
+- Strings e arrays contém métodos.
