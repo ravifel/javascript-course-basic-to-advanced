@@ -28,3 +28,84 @@ MÉTODOS
 
 - Métodos são propriedades que funcionam como funções.
 - Strings e arrays contém métodos.
+
+INVOCANDO UMA PROPRIEDADE
+string.propriedade;
+
+INVOCANDO UM MÉTODO
+string.metodo();
+
+---------------------------------------------
+
+OBJETOS
+- Uma coleção de propriedades, parecidos com Arrays
+- Podemos acessar estas propriedades passando cada propriedade passado o nome atrelado ao objeto.
+- Traz o paradígma do POO (Programação Orientada a Objetos).
+
+- É possível atribuir novas propriedades e deletar propriedades de um objeto que já foi inicializado;
+> Exemplo: carro.tetoSolar = true;
+> Exemplo: delete carro.portas;
+
+
+COPIAR OBJETOS:
+- É possível copiar todas as propriedades de um objeto para outro objeto.
+- Com o método "assign" torna possivel a copia dos objetos. (Um objeto herda todas as propriedades de outro objeto).
+
+MÉTODO KEYS (OBJECT)
+- Também podemos verificar quais as chaves cada objeto possui.
+- É importante para fazer uma tratativa no programa.
+
+MUTAÇÃO (MUTABILITY)
+- Um objeto pode herdar todas as caracteristicas do outro, virando uma referência ao mesmo;
+- Criar um objeto novo com todas as caracteristicas de um outro objeto;
+- Criar um objeto igual o outro e ainda referenciando ao antigo;
+- Posso fazer mudanças em um objeto a partir do primeiro e vice e versa. (Mutabilidade)
+
+LOOPS EM ARRAYS
+- Uma técnica muito utilizada na programação é o loop nos arrays;
+- Como é uma lista com muitos valores, muitas vezes precisamos ver/exibir cada um deles;
+
+---------------------------------------------
+
+MÉTODOS DE ARRAY: PUSH e POP
+- Utilizar métodos de arrays que já foram criados previamente no JavaScript.
+- (push) Serve para inserir um elemento no final do array.
+- (pop) Serve para remover um elemento no final do array.
+pessoas.push("PessoaTeste");
+pessoas.pop();
+
+MÉTODOS DE ARRAY: SHIFT e UNSHIFT
+- (shift) Remove o primeiro elemento de um array.
+- (unshift) Adiciona um ou mais elementos no inicio de um array.
+
+--> Adicionam elementos em um Array: PUSH, UNSHIFT (Final, Inicio)
+--> Removem elementos em um Array: POP, SHIFT (Final, Inicio)
+
+MÉTODOS DE ARRAY: INDEXOFe LASTINDEXOF
+- (indexOf) encontra o índice de um determinado elemento;
+- (lastIndexOf) encontrar o último indice de um elemento;
+- Servem para ver qual o indice de determinado elemento na primeira vez que ele viu esse elemento no Array ou na última vez que esse elemento foi visto.
+
+MÉTODOS DE ARRAY: SLICE
+- Retorna um array a partir de outro array;
+- O array retornado é determinado pelos parâmetros que são os índices de início e fim do novo array;
+- Pode ser utilizado para pegar algum elemento de um array ou até uma parte dele e colocar em outra variável.
+- O 2° parametro passado no SLICE é para determinar até qual elemento vai ocorrer a ação, parando no elemento anteriro ao que foi passado no 2º parametro.
+- Caso o 2º parametro for omitido, o SLICE irá ocorrer até o último elemento do array.
+
+MÉTODOS DE ARRAY: FOREACH
+- Itera cada elemento do array e vai criar uma lógica.
+
+MÉTODOS DE ARRAY: INCLUDES
+- Verifica se o array tem um determinado elemento;
+- É possível criar uma lógica a partir disso;
+
+MÉTODOS DE ARRAY: REVERSE
+- Inverte um array.
+- Deve ser retornado um novo Array invertido.
+
+---------------------------------------------
+
+MÉTODOS DE STRING: TRIM
+- Remove tudo que não é "String" de uma string;
+- Usando ele em uma frase, irá ser cortado até os espaços entre as palavras;
