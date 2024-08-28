@@ -221,3 +221,41 @@ console.log(listaNumeros3.reverse());
 let listaNomes4 = ["Marcos", "Davi", "Ana", "Pedro", "Carlos", "Ana", "Maria", "João"]
 console.log(listaNomes4);
 console.log(listaNomes4.reverse());
+
+//MÉTODOS DE STRING: TRIM
+let texto = "     Ravi  ";
+let textoCorrigido = texto.trim();
+console.log(texto);
+console.log(textoCorrigido);
+
+let texto2 = " \n    Felipe   \n";
+let textoCorrigido2 = texto2.trim();
+console.log(texto2);
+console.log(textoCorrigido2);
+
+//MÉTODOS DE STRING: PADSTART
+let codigo = 1;
+let codigoComZeros = codigo.toString().padStart(6, "0");
+console.log(codigoComZeros);
+let codigo2 = 7348;
+let codigoComZeros2 = codigo2.toString().padStart(6, "0");
+console.log(codigoComZeros2);
+
+//MÉTODOS DE STRING: SPLIT
+let frase = "O rato roeu a roupa do rei de roma";
+let palavras = frase.split(" ");
+console.log(palavras);
+
+let mercado = "Banana;Maçã;Uva;Melancia;Melão";
+let produtos = mercado.split(";");
+console.log(produtos);
+
+//MÉTODOS DE STRING: JOIN
+let fraseMontada = palavras.join('<->');
+console.log(fraseMontada);
+console.log(palavras.join(" "));
+console.log(produtos.join(", "));
+
+//MÉTODOS DE STRING: REPEAT
+console.log('TesteRepeat-'.repeat(5));
+

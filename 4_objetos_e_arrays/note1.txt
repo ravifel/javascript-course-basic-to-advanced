@@ -109,3 +109,23 @@ MÉTODOS DE ARRAY: REVERSE
 MÉTODOS DE STRING: TRIM
 - Remove tudo que não é "String" de uma string;
 - Usando ele em uma frase, irá ser cortado até os espaços entre as palavras;
+
+MÉTODOS DE STRING: PADSTART
+- Inserir caracteres antes da string;
+- Adicionar algum caractere várias vezes antes da string;
+
+MÉTODOS DE STRING: SPLIT
+- Divive uma String em um Array;
+- Divide por um separador e retorna um Array;
+- É necessário passar um argumento como separador;
+
+MÉTODOS DE STRING: JOIN
+- É o processo contrário do método SPLIT.
+- Junta elementos em um array em uma frase, por meio de um separador;
+- É útil para tratar no backend;
+
+MÉTODOS DE STRING: REPEAT
+- Repete uma string de acordo com o parâmetro "number", que é o número de vezes que a repetição vai acontecer.
+- Útil para usar ao invés de Loops caso não seja necessário um Loop.
+
+---------------------------------------------
