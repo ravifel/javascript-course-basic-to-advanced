@@ -129,3 +129,34 @@ MÉTODOS DE STRING: REPEAT
 - Útil para usar ao invés de Loops caso não seja necessário um Loop.
 
 ---------------------------------------------
+
+REST OPERATOR
+- Uma forma de uma função receber indefinidos parâmetros. Podendo receber um números de parâmetros diferentes como por exemplo 100 parâmetros ou 1000 parâmetros;
+- O operador rest vai transformar os parâmetros em um array;
+- O parâmetro é definido por: <...nomeDoParametro>;
+
+DESTRUCTURING COM OBJETOS
+- Podemos definir variáveis com propriedades do objeto com uma notação diferente, chamada destructuring;
+- const {'coloca-se as propriedades aqui', 'chave, valor'} = <nomeObjeto>;
+- Exemplo: 'nome: fnome'
+
+DESTRUCTURING COM ARRAYS
+- Podemos definir variáveis com valores do array com o destructuring;
+- let ['coloca-se os valores aqui'] = <nomeDoArray>;
+
+JSON
+- JSON = JavaScript Object Notation;
+- Utilizado para comunicação entre serviços. Exemplo: Backend e Frontend;
+- Basicamente um tipo de dado padronizado, que lembra muito os objetos do JavaScript;
+- Usado para comunicação com Api e receber dados via Api;
+- É uma padronização de tipo de dados para a comunicação entre os serviços (É muito utilizado);
+- É similar ao Objeto porém não possui metódos, apenas dados;
+- Serve para o envio e recebimento de dados;
+
+- Rigoroso na estrutura, ou seja, você deve seguir o padrão imposto por este formato;
+- Apenas aspas duplas;
+- Não aceita comentários;
+
+JSON PARA STRING
+- Podemos converter um JSON para uma String de forma fácil: JSON.stringify(car)
+- Ou também podemos converter uma String para um JSON: JSON.parse(jsonToString);

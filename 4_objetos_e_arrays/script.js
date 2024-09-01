@@ -259,3 +259,51 @@ console.log(produtos.join(", "));
 //MÉTODOS DE STRING: REPEAT
 console.log('TesteRepeat-'.repeat(5));
 
+//REST OPERATOR
+function imprimirNoConsole01(...argumentos) {
+    for (let i = 0; i < argumentos.length; i++) {
+        console.log(argumentos[i]);
+    }
+}
+imprimirNoConsole01(1, 2, 3, 4, "Teste");
+
+//DESTRUCTURING COM OBJETOS
+const pessoa4 = {
+    nome: "Ravi",
+    sobrenome: "Ferreira"
+}
+
+const { nome: fnome, sobrenome: fsobrenome } = pessoa4;
+console.log(fnome);
+console.log(fsobrenome);
+console.log(pessoa4.nome);
+console.log(pessoa4.sobrenome);
+
+//DESTRUCTURING COM ARRAYS
+let listaNomes5 = ["Ravi", "João", "Pedro"];
+let [nomeA, nomeB, nomeC] = listaNomes5;
+console.log(nomeA);
+console.log(nomeB);
+console.log(nomeC);
+
+//JSON
+let pessoa5 = {
+    "name": "Ravi",
+    "age": 22,
+    "email": "ravifelipee@gmail.com",
+    "languages": ["portuguese", "english", "french"]
+}
+console.log(pessoa5.name);
+console.log(pessoa5.age);
+console.log(pessoa5.email);
+console.log(pessoa5.languages);
+
+//JSON, STRING
+let JsonToString = JSON.stringify(pessoa5); //JSON PARA STRING
+console.log(JsonToString);
+console.log(typeof (JsonToString));
+
+let stringToJson = JSON.parse(JsonToString); //STRING PARA JSON
+console.log(stringToJson);
+console.log(stringToJson.name);
+console.log(typeof (stringToJson));
