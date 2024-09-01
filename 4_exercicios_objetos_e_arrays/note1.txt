@@ -1,0 +1,24 @@
+01- Crie um Array com 5 itens e acesse o item 1,3,4. Observaçaõ: O array começa com o índice 0.
+
+02- Crie um array com 2 elementos e outro com 4 elementos. Imprima o número de elementos de cada um na tela.
+
+03- Crie um objeto "onibus" com as propriedades "rodas = 8", "limite de passageiros = 40", "portas = 2" e imprima todas essas propriedades no concole.
+
+04- Adicione a propriedade "janelas" no onibus, com o valor de 20. Delete a propriedade rodas e imprima a propriedade janelas no concole.
+
+05- Crie um array com 5 nomes, incluindo o seu. Verifique se o seu nome existe no array. Se existir imprima alguma mensagem no console. (Dica: usar o "includes")
+
+06- Crie 2 arrays, um com mais de 5 elementos e outro com menos. Faça uma função que verifica o número de elementos. Se possuir menos que 5, imprima "Poucos elementos" no console. Se tiver mais imprima "Muitos elementos".
+
+07- Crie um array com 5 elementos. Faça uma iteração entre todos eles e imprima no console o valor.
+
+08- Crie um JSON com 3 propriedades. Atribua ele a uma variavel e acesse as propriedades exibindo no console.
+
+09- Crie um array a partir de uma frase. Imprima cada palavra do array no console por meio d eum for.
+
+10- Crie um objeto "Calculadora" que tem os seguintes métodos: "Somas", "Subtrair", "Multiplicar" e "Dividir". Os métodos só devem aceitar 2 parametros. Utilize cada um dos metodos e imprima os valores no console.
+
+11- Insira 5 elementos na variável arr. Os elementos devem ser um número, somando o iterador mais 5. O iterador é a variável temporária que controla o loop.
+
+12- Crie uma função chamada findMaxNumber que recebe como parâmetro um array de números. A função deve retornar o maior número presente no array.
+
