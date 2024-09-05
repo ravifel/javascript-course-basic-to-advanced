@@ -124,6 +124,16 @@ let arrayExercicio12 = [100, 4, 657, 34, 23, 7675, 22, 565675];
 findMaxNumber(arrayExercicio12);
 
 //13
-function sumUniqueNumbers(){
-    
+let arrayExercicio13 = []
+let valoresPares = 0;
+
+for (let i = 0; i < 5; i++) {
+    //arrayExercicio13[i] = parseInt(prompt(`Digite o valor nº${i}`));
 }
+
+for (let i = 0; i < 5; i++) {
+    if (arrayExercicio13[i] % 2 == 0) {
+        valoresPares++;
+    }
+}
+console.log(`A quantidade de valores pares é ${valoresPares}`);

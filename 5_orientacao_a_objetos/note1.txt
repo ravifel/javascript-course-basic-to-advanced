@@ -1,0 +1,59 @@
+Conceitos de Orientações a Objetos (POO)
+(Classes, Construtores, Herança e etc.)
+
+---> Oque é?
+- Uma forma de programar que utiliza os objetos como o seu principal príncipio.
+- Além de utilizar conceitos e técnicas que envolvem objetos.
+- A maioria dos softwares, na parte de backend, são desenvolvidos em cima desse paradigma.
+- Grandes frameworks se aproveitam desta técnica (Laravel, Django e etc.)
+
+---> MÉTODOS
+- Propriedades que servem como funções.
+- Ou seja, ações dos objetos.
+- Invocamos os métodos da mesma maneira que as funções.
+- Normalmente os métodos interagem com os objetos.
+- Até mudando os valores das suas propriedades para corresponder a lógica do programa desenvolvido.
+
+---> PROTOTYPES
+- Um objeto fallback de outro objeto.
+- Quando um objeto recebe uma requisição de uma propriedade que não tem, ela é procurada no prototype deste objeto.
+- O prototype de um objeto criado do zero é o Object, que tem os métodos nativos da linguagem.
+- É como se fosse um Objeto de um Objeto.
+- Todo Object tem um prototype
+
+- Quando criamos um objeto a partir de um outro, o base será o prototype.
+- Ele herdará tanto os métodos como as propriedades de Object (o prototype do objeto base).
+- Quanto os do objeto base para este novo.
+
+---> CLASSES
+- Criar um objeto e instanciar um objeto dessa classe.
+- O prototype do JavaScript pode ser chamado de classe.
+- Pois nas outras linguagens uma classe é um molde de um objeto.
+- Ou seja, podemos criar diversos objetos em cima de um prototype.
+
+- Não podemos adicionar propriedades na classe, só via prototype. A classe só aceita métodos
+
+---> CONSTRUCTOR POR FUNÇÃO
+- Construtores são formas de instanciar uma classe em uma linguagem de programação.
+- Instanciar é criar um novo objeto.
+- No construtor já podmeos definir propriedades.
+
+---> CONSTRUCTOR POR NEW
+- Em muitas linguagens temos a Possibilidade de instanciar um objeto com "New", no JavaScript também.
+
+---> CONSTRUCTOR POR MÉTODO
+- Além de propriedades, podemos criar a classe base já com métodos.
+- Basta definir ao prototype o método desejado.
+- Forma mais correta de declarar um metodo
+
+---> CONSTRUCTOR NA CLASSE (ES6)
+- Com a versão do ES6, uma possibilidade de criar uma classe(objeto) com constructor foi adicionada.
+- Então não precisamos mais criar por meio de uma função, veja.
+
+---> OVERRIDE NAS PROPRIEDADES DO PROTOTYPE
+- Sempre que adicionamos uma propriedade a um objeto, é criada uma idêntica no Prototype.
+- Podemos substituir a do prototype.
+
+---> SYMBOLS
+- Propriedades únicas, que não podem ser alteradas e nem criadas duas vezes.
+- Podemos utilizar como uma constante, só que para propriedade de objeto.

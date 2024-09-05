@@ -22,3 +22,7 @@
 
 12- Crie uma função chamada findMaxNumber que recebe como parâmetro um array de números. A função deve retornar o maior número presente no array.
 
+---------------------------------------------
+Exercícios Professor Thiago Carlos
+
+13- Desenvolva um programa em que o usuário digite 7 valores e no final do programa mostre a quantidade de valores pares;
