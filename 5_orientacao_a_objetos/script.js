@@ -162,3 +162,37 @@ Computador.prototype[teclado] = 1;
 
 console.log(Computador.prototype[teclado]);
 console.log(ideapadS145[teclado]);
+
+//GETTERS and SETTERS
+class Curso {
+    constructor(nomeCurso, areaCurso) {
+        this.nomeCurso = nomeCurso;
+        this.areaCurso = areaCurso;
+    }
+
+    get verNomeCurso() {
+        console.log(this.nomeCurso);
+    }
+
+    set alterarNomeCurso(novoNomeCurso) {
+        this.nomeCurso = novoNomeCurso;
+    }
+
+    get verAreaCurso() {
+        console.log(this.areaCurso);
+    }
+
+    set alterarAreaCurso(novaAreaCurso) {
+        this.areaCurso = novaAreaCurso;
+    }
+}
+
+let enfermagem = new Curso("Enfermagem", "Saude");
+
+console.log(enfermagem);
+enfermagem.verNomeCurso;
+enfermagem.verAreaCurso;
+enfermagem.alterarNomeCurso = "Computação";
+enfermagem.alterarAreaCurso = "Exatas";
+enfermagem.verNomeCurso;
+enfermagem.verAreaCurso;

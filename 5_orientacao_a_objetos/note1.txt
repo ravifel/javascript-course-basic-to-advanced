@@ -57,3 +57,11 @@ Conceitos de Orientações a Objetos (POO)
 ---> SYMBOLS
 - Propriedades únicas, que não podem ser alteradas e nem criadas duas vezes.
 - Podemos utilizar como uma constante, só que para propriedade de objeto.
+
+---> GETTERS and SETTERS
+GET: Serve para resgatar o valor de uma propriedade
+SET: Serve para alterar o valor de uma propriedade
+
+---> HERANÇA (Inheritance)
+- Uma classe pode herdar propriedades de outra classe por herança;
+- Para isso, utilizamos "extends";
