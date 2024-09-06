@@ -65,3 +65,6 @@ SET: Serve para alterar o valor de uma propriedade
 ---> HERANÇA (Inheritance)
 - Uma classe pode herdar propriedades de outra classe por herança;
 - Para isso, utilizamos "extends";
+
+---> INSTANCEOF OPERATOR
+- Podemos verificar quem é o pai do objeto utilizando o "instanceof".

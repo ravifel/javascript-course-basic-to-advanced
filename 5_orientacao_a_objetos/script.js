@@ -257,3 +257,7 @@ class Caminhao extends Automovel {
 
 let caminhaoPequeno = new Caminhao(2, 12, 1);
 console.log(caminhaoPequeno);
+
+//INSTANCEOF OPERATOR
+console.log(new Moto instanceof Automovel); //True
+console.log(new Moto instanceof Caminhao); //False
