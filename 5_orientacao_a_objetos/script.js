@@ -196,3 +196,64 @@ enfermagem.alterarNomeCurso = "Computação";
 enfermagem.alterarAreaCurso = "Exatas";
 enfermagem.verNomeCurso;
 enfermagem.verAreaCurso;
+
+//HERANÇA (Inheritance)
+class Automovel {
+    constructor(quantidadeAssentos, quantidadeRodas) {
+        this.quantidadeAssentos = quantidadeAssentos;
+        this.quantidadeRodas = quantidadeRodas;
+    }
+
+    get exibirQuantidadeAssentos() {
+        console.log(this.quantidadeAssentos);
+    }
+
+    set alterarQuantidadeAssentos(novaQuantidade) {
+        this.quantidadeAssentos = novaQuantidade;
+    }
+
+    get exibirQuantidadeRodas() {
+        console.log(this.quantidadeRodas);
+    }
+
+    set alterarQuantidadeRodas(novaQuantidade) {
+        this.quantidadeRodas = novaQuantidade;
+    }
+}
+
+
+class Moto extends Automovel {
+    constructor(quantidadeAssentos, quantidadeRodas, corGuidao) {
+        super(quantidadeAssentos, quantidadeRodas);
+        this.corGuidao = corGuidao;
+    }
+
+    get exibirCorGuidao() {
+        console.log(this.corGuidao);
+    }
+
+    set alterarCorGuidao(novaCor) {
+        this.corGuidao = novaCor;
+    }
+}
+
+let motoCross = new Moto(2, 2, "Amarelo");
+console.log(motoCross);
+
+class Caminhao extends Automovel {
+    constructor(quantidadeAssentos, quantidadeRodas, quantidadeCarroceria) {
+        super(quantidadeAssentos, quantidadeRodas);
+        this.quantidadeCarroceria = quantidadeCarroceria;
+    }
+
+    get verQuantidadeCarroceria() {
+        console.log(this.quantidadeCarroceria);
+    }
+
+    set alterarQuantidadeCarroceria(novaQuantidade) {
+        this.quantidadeCarroceria = novaQuantidade;
+    }
+}
+
+let caminhaoPequeno = new Caminhao(2, 12, 1);
+console.log(caminhaoPequeno);
