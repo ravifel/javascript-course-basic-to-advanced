@@ -96,3 +96,64 @@ console.log(carrinho01);
 
 carrinho01.removeItem({ id: 1, nome: "Camisa", quantidade: 1, precoUnitario: 20 });
 console.log(carrinho01);
+
+//03
+class EnderecoCliente {
+    constructor(rua, bairro, cidade, estado) {
+        this.rua = rua;
+        this.bairro = bairro;
+        this.cidade = cidade;
+        this.estado = estado;
+    }
+
+    get exibirRua() {
+        console.log(this.rua);
+    }
+
+    get exibirBairro() {
+        console.log(this.bairro);
+    }
+
+    get exibirCidade() {
+        console.log(this.cidade);
+    }
+
+    get exibirEstado() {
+        console.log(this.estado);
+    }
+
+    set alterarRua(novaRua) {
+        this.rua = novaRua;
+    }
+
+    set alterarBairro(novoBairro) {
+        this.bairro = novoBairro;
+    }
+
+    set alterarCidade(novaCidade) {
+        this.cidade = novaCidade;
+    }
+
+    set alterarEstado(novoEstado) {
+        this.estado = novoEstado;
+    }
+
+}
+let enderecoRavi = new EnderecoCliente("Rua 01", "Dionísio Torres", "Fortaleza", "Ceará");
+console.log(enderecoRavi);
+enderecoRavi.exibirRua;
+enderecoRavi.exibirBairro;
+enderecoRavi.exibirCidade;
+enderecoRavi.exibirEstado;
+
+enderecoRavi.alterarRua = "Rua São João";
+enderecoRavi.alterarBairro = "Montese";
+enderecoRavi.alterarCidade = "Caucaia";
+enderecoRavi.alterarEstado = "Alagoas";
+
+enderecoRavi.exibirRua;
+enderecoRavi.exibirBairro;
+enderecoRavi.exibirCidade;
+enderecoRavi.exibirEstado;
+
+//04
