@@ -3,3 +3,5 @@
 02- Crie uma classe que simula um carrinho de compras de um e-commerce. Propriedades intens, quantidade total, valor total. Crie os métodos para adicionar e remover os itens.
 
 03- Crie um objeto que simula um endereço de um cliente. Propriedades: Rua, Bairro, Cidade e Estado. No construtor o endereço já deve ser definido por completo. Crie métodos para atualizar todas as propriedades.
+
+04- Crie uma classe que simule um carro. Propriedades: Marca, Cor, Gasolina restante. Crie um método de dirigir o carro, que vá diminuindo a gasolina gradativamente e um método de abastecer para aumentar a gasolina quando necessário.

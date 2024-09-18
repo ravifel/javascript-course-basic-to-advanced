@@ -157,3 +157,31 @@ enderecoRavi.exibirCidade;
 enderecoRavi.exibirEstado;
 
 //04
+class Carro {
+    constructor(marca, cor, gasolinaRestante, consumoPorKm) {
+        this.marca = marca;
+        this.cor = cor;
+        this.gasolinaRestante = gasolinaRestante;
+        this.consumoPorKm = consumoPorKm;
+    }
+
+    //PRECISA CORRIGIR OS METODOS, TEM ALGO ERRADO
+    dirigirCarros(kmRodados) {
+        let reducaoGasolina = kmRodados / this.consumoPorKm;
+        this.gasolinaRestante = this.gasolinaRestante - reducaoGasolina;
+        console.log(`A gasolina restante agora é ${this.gasolinaRestante}. Após dirigir.`);
+    }
+
+    aumetarGasolina(quantidadeParaAumentar) {
+        this.gasolinaRestante = this.gasolinaRestante + quantidadeParaAumentar;
+        console.log(`A nova quantidade de gasolina é ${this.gasolinaRestante} após o aumento da gasolina.`)
+    }
+}
+
+let carroRavi = new Carro('Toyota', 'Prata', 100, 10);
+console.log(carroRavi);
+console.log(carroRavi.gasolinaRestante);
+carroRavi.dirigirCarros(1);
+console.log(carroRavi.gasolinaRestante);
+carroRavi.aumetarGasolina(15);
+console.log(carroRavi.gasolinaRestante);
