@@ -5,3 +5,5 @@
 03- Crie um objeto que simula um endereço de um cliente. Propriedades: Rua, Bairro, Cidade e Estado. No construtor o endereço já deve ser definido por completo. Crie métodos para atualizar todas as propriedades.
 
 04- Crie uma classe que simule um carro. Propriedades: Marca, Cor, Gasolina restante. Crie um método de dirigir o carro, que vá diminuindo a gasolina gradativamente e um método de abastecer para aumentar a gasolina quando necessário.
+
+05- Crie uma classe "Conta Bancaria". Propriedades: Saldo na conta corrente, Saldo na conta poupança e Juros da poupança. Crie os métodos de deposito e saque, também crie um método para transferir dinheiro da poupança para a corrente. Além disso crie uma conta especial que herda da conta normal. Na conta normal os juros são dobrados da conta normal.
