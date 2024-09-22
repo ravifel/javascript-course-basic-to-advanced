@@ -1,0 +1,83 @@
+BUG: 
+- Problema que ocorre no código, muitas vezes por erro do programador, que impede o funcionamento correto do mesmo.
+
+DEBUG: 
+- Ato de resolver os bugs encontrados no código ou também a forma que é feita a visualização de valores de variáveis ou fluxo no código.
+
+------------------------------------
+
+STRICT MODE:
+- Deixa o JavaScript mais rigoroso na hora de se programador
+- Deve ser declarado no topo de arquivos ou funções
+- Colocar o 'strict' ajuda você a codificar de forma correta e não vai impedir/limitar nada no seu software ou programa.
+Exemplos:
+
+'use strict'
+
+let opa = 'teste';
+
+//delete Object.prototype;
+
+function teste() {
+    'use strict'
+    let testandoss = 'teste 2';
+}
+teste();
+
+false.prop = ""
+"teste".prop = 2
+
+------------------------------------
+
+MÉTODOS DEBUGS: console.log()
+- Bastante utilizado para DEBUG
+- Função que estávamos utilizando para mostrar os valores no console
+- Sempre retirar os console.log após Debugar
+
+------------------------------------
+
+MÉTODOS DEBUGS: debugger
+- Funcionalidade que para o código quando atingir a linha 'debugger';
+- Sempre retirar após Debugar
+- Para ir para o próximo debug, clicar no ícone de "play"
+- É bem util pois mostra o andamento do código em tempo real
+
+------------------------------------
+
+TRATAMENTO DE INPUT POR FUNÇÃO
+- Não podemos controlar os dados que o usuário enviar, então para o bom funcionamento do software, devemos tratar eles.
+
+function checarNumero(valor) {
+    let resultado = Number(valor);
+    if (Number.isNaN(resultado)) {
+        return null;
+    } else {
+        return resultado;
+    }
+}
+
+------------------------------------
+
+EXCEPTIONS
+- Podemos criar erros no programa, caso alguma condição não seja atendida.
+- Porém as EXCEPTIONS abortam o programa, só geram erro.
+- Tratamento de erros internos do sistema, geralmente é usando quando outros programados estão usando algum programa, é usado para condicionar os programadores.
+
+------------------------------------
+
+TRY E CATCH
+- O bloco 'Try Catch' vai tentar executar um código, caso não consiga ele pode retornar o erro que esse código gerou.
+- Muito útil para debug.
+
+------------------------------------
+
+FINALLY
+- Finally é executada independente do resultado do try/Catch
+- E pode existir com try e catch ou apenas try.
+
+------------------------------------
+
+ASSERTIONS
+- Verificações no programa que são utilizadas para assegurar que tudo ocorra da forma esperada.
+
+------------------------------------
