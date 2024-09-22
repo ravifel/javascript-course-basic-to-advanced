@@ -297,3 +297,77 @@ console.log(contaRavi02.saldoContaPoupanca)
 let contaRavi03 = new contaEspecial(80, 700, 1);
 console.log(contaRavi03);
 contaRavi03.depositoContaPoupanca(12);
+
+//06
+class retangulo {
+    constructor(largura, altura) {
+        this.largura = largura;
+        this.altura = altura;
+    }
+
+    calcularArea() {
+        let area = this.largura * this.altura;
+        return area;
+    }
+
+    calcularPerimetro() {
+        let perimetro = 2 * (this.largura + this.altura);
+        return perimetro;
+    }
+}
+
+let retangulo01 = new retangulo(10, 6);
+console.log(retangulo01);
+console.log(retangulo01.calcularArea());
+console.log(retangulo01.calcularPerimetro());
+
+//07
+class voo {
+    constructor(codigoVoo, origem, destino, assentosDisponiveis) {
+        this.codigoVoo = codigoVoo;
+        this.origem = origem;
+        this.destino = destino;
+        this.assentosDisponiveis = assentosDisponiveis;
+    }
+
+    reservarAssento() {
+        this.assentosDisponiveis = this.assentosDisponiveis - 1;
+        console.log(`O seu assendo foi reservado. Agora a quantidade de assentos disponiveis é ${this.assentosDisponiveis}`);
+    }
+
+    consultarAssentosDisponiveis() {
+        console.log(`A quantidade de assentos disponiveis é ${this.assentosDisponiveis}`)
+    }
+}
+
+let voo0223 = new voo('0223', 'Fortaleza', 'Lisboa', 6);
+voo0223.consultarAssentosDisponiveis();
+voo0223.reservarAssento();
+voo0223.consultarAssentosDisponiveis();
+
+//08
+class livro {
+    constructor(titulo, autor, disponivel) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.disponivel = disponivel;
+    }
+
+    emprestar() {
+        this.disponivel = false;
+    }
+
+    devolver() {
+        this.disponivel = true;
+    }
+
+    consultarDisponibilidade() {
+        console.log(`${(this.disponivel ? "DISPONIVEL" : "NÃO DISPONIVEL")}`);
+    }
+}
+let livro1 = new livro('A Casa Verde', 'Joao Moura', true);
+livro1.consultarDisponibilidade();
+livro1.emprestar();
+livro1.consultarDisponibilidade();
+livro1.devolver();
+livro1.consultarDisponibilidade();

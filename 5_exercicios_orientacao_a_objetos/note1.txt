@@ -7,3 +7,31 @@
 04- Crie uma classe que simule um carro. Propriedades: Marca, Cor, Gasolina restante. Crie um método de dirigir o carro, que vá diminuindo a gasolina gradativamente e um método de abastecer para aumentar a gasolina quando necessário.
 
 05- Crie uma classe "Conta Bancaria". Propriedades: Saldo na conta corrente, Saldo na conta poupança e Juros da poupança. Crie os métodos de deposito e saque, também crie um método para transferir dinheiro da poupança para a corrente. Além disso crie uma conta especial que herda da conta normal. Na conta normal os juros são dobrados da conta normal.
+
+06- Crie uma classe chamada "Retangulo" que representa um retângulo.
+A classe deve ter os seguintes atributos:
+largura: representando a largura do retângulo (número maior que zero).
+altura: representando a altura do retângulo (número maior que zero).
+A classe deve ter os seguintes métodos:
+calcularArea(): retorna a área do retângulo (largura * altura).
+calcularPerimetro(): retorna o perímetro do retângulo (2 * (largura + altura)).
+
+07- Crie uma classe chamada "Voo" que representa um voo em um sistema de reservas de voo.
+A classe deve ter os seguintes atributos:
+codigoVoo: representando o código único do voo (string ou número).
+origem: representando a cidade de origem do voo (string).
+destino: representando a cidade de destino do voo (string).
+assentosDisponiveis: representando a quantidade de assentos disponíveis no voo (número).
+A classe deve ter os seguintes métodos:
+reservarAssento(): verifica se há assentos disponíveis no voo e, se houver, decrementa a quantidade de assentos disponíveis em um.
+consultarAssentosDisponiveis(): retorna a quantidade de assentos disponíveis no voo.
+
+08- Crie uma classe chamada "Livro" que representa um livro em um sistema de biblioteca.
+A classe deve ter os seguintes atributos:
+titulo: representando o título do livro (string).
+autor: representando o autor do livro (string).
+disponivel: representando a disponibilidade do livro (boolean).
+A classe deve ter os seguintes métodos:
+emprestar(): verifica se o livro está disponível para empréstimo e, se estiver, atualiza a disponibilidade para false.
+devolver(): verifica se o livro não está disponível para empréstimo e, se não estiver, atualiza a disponibilidade para true.
+consultarDisponibilidade(): retorna a disponibilidade atual do livro.
