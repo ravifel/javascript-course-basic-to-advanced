@@ -1,0 +1,98 @@
+EXPRESSÕES REGULARES (Regex)
+
+- É usado em várias linguagens (Java, PHP, Phyton).
+- É uma maneira de simplificar o código criando padrões.
+- Aprender a criar expressões regulares e usa-las no cotidiano de programção.
+
+Conceito:
+- Uma forma de encontrat padrões em uma string
+- Por exemplo: validar se tem apenas números
+- Em vez de criarmos funções complexas, podemos encontrar dados em texto por meio das expressões regulares;
+- Também são chamadas de Regex (Regular Expressions - RegEx)
+
+----------------------------------------
+
+CRIANDO UMA EXPRESSÃO REGULAR
+- As expressões regulares no JavaScript são um tipo de objeto.
+- Podemos instancia-lo de duas formas em JavaScript.
+- New RegExp e /.../
+
+----------------------------------------
+
+VERIFICANDO PADRÕES COM REGEX
+- Depois da definição do padrão por meio da regex. Utilizamos o metodo test() para verificar se o padrão é retornado.
+- Com isso vamos receber de resposta "true" ou "false"
+
+----------------------------------------
+
+CONJUNTO DE CARACTERES
+- Podemos definir um conjunto de caracteres para encontrar por regex.
+- Basta por entre colchetes -> [];
+- Com um traço podemos definir um intervalo também
+[123]
+[0-9]
+
+----------------------------------------
+
+CARACTERES ESPECIAIS
+. --> Qualquer caractere, menos nova linha. (Conhecido como Coringa)
+\d --> Qualquer dígito de caracteres.
+\D --> Caracteres que não são números.
+\s --> Qualquer caractere de espaço branco. (Espaços, Quebras de Linha, Tabs)
+\S --> Caractere que não seja espaço em branco. (Não aceita "Espaços", "Quebras de Linha", "Tabs")
+\w --> Um caractere alfanumerico ("teste"). (Aceita Letras e Números)
+\W --> Caractere não-alfanumérico. (Aceita o que não for Letras e Números)
+
+----------------------------------------
+
+REGEX COM CARACTERES ESPECIAIS
+- Podemos utilizar os caracteres especiais de várias formas
+
+----------------------------------------
+
+OPERADOR NOT ^
+- Podemos escrever um set que aceitam tudo, menos alguns caracteres com o not.
+- Lembrando que combinações serão aceitas, o negado é apenas se bate com o set.
+- Mais adiante aprenderemos negar de outras formas.
+
+----------------------------------------
+
+OPERADOR PLUS +
+- Quando um + está após alguma expressão, este elemento pode se repetir mais de uma vez.
+
+----------------------------------------
+
+OPERADOR ?
+- Faz com que o dígito anterior seja opcional.
+
+----------------------------------------
+
+OPERADOR Precisa
+- Inserir o número de ocorrência entre {}.
+
+----------------------------------------
+
+MÉTODO EXEC
+- Método 'exec' nos retorna um objeto com algumas informações sobre regex.
+- Se nada for encontrado, retora null.
+
+----------------------------------------
+
+MÉTODO Match
+- O método match funciona de forma similar ao exec.
+- Retorna um conjunto com mais informações sobre o Regex.
+- Não é tão utilizado.
+- É um método que pode ser adicionado diretamente na string.
+
+----------------------------------------
+
+MÉTODO CHOICE PATTERN
+- Podemos colocar uma instrução na regex que funciona como um || (or) das condicionais.
+- Pode criar várias ocorrencias diferentes e separar por uma expressão que se assemelha ao 'or';
+
+----------------------------------------
+
+NA PRÁTICA: 
+Validando um domínio
+Validando um email
+Validando data de nascimento
