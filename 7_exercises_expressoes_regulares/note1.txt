@@ -1,0 +1,9 @@
+01- Criar um regex que aceite só letras maiusculas e depois teste.
+
+02- Crie um regex que só aceite strings terminadas com "ID" e depois teste.
+
+03- Crie um regex que aceite a seguinte expressão "Marca: nomeDaMarca". Onde nomeDaMarca pode variar para Nike, Adidias, Puma, Asics. Depois teste.
+
+4- Crie um regex que valide endereço de IP e depois teste (Exemplo: 127.0.0.1)
+
+5- Crie uma regex que valide nome de usuários no sistema. Aceita letras de a-z, números de 0-9, mínimo de 3 caracteres e máximo de 16 e depois teste

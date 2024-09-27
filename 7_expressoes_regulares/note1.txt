@@ -36,12 +36,17 @@ CONJUNTO DE CARACTERES
 
 CARACTERES ESPECIAIS
 . --> Qualquer caractere, menos nova linha. (Conhecido como Coringa)
+OBS: Quando quiser usar o '.' com o setindo apenas de ponto. deve-se colocar o '\' antes do ponto.
+
 \d --> Qualquer dígito de caracteres.
 \D --> Caracteres que não são números.
 \s --> Qualquer caractere de espaço branco. (Espaços, Quebras de Linha, Tabs)
 \S --> Caractere que não seja espaço em branco. (Não aceita "Espaços", "Quebras de Linha", "Tabs")
 \w --> Um caractere alfanumerico ("teste"). (Aceita Letras e Números)
 \W --> Caractere não-alfanumérico. (Aceita o que não for Letras e Números)
+
+\b --> indica que a string vai ser finalizada com o ultimo elemento passado no regex. 
+Exemplo: /\d+ID\b/ (strings terminadas com "ID");
 
 ----------------------------------------
 
