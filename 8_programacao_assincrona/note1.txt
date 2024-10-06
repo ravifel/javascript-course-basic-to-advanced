@@ -1,0 +1,72 @@
+--> Programação Assincrona:
+É um recurso que é bem forte no JavaScript e bem utilizado no cotidiano da programação.
+Permite que ações sejam executadas em determinados tempos que não seja o mesmo da execuçaõ do programa
+
+- Até agora programamos de uma maneira que uma ação acontecia após a outra.
+- A programação assincrona trabalha nesta questão, ações podem ser executadas ao tempo todo sem uma 'fila'.
+- Exemplo: 
+usuário está no check-out, manda salvar seu endereço na conta, mas pode prosseguir para a finalização sem recarregar a página, pois adicionar endereço ocorre de forma assincrona.
+
+(Exemplo de Recurso: AJAX)
+Quando é feita uma requisição para o Backend e ele retorna uma resposta, sem que seja dado o Reload na página. Usando programação de forma Assincrona
+
+Fazer com que o programa realize uma ação de forma Assincrona,
+ou seja, que uma ação seja realizada sem que esteja sendo seguida uma ordem de ações em formatode fila. 
+Sendo possível que uma ação esteja sendo executada em segundo plano, sem que a proxima ação necessariamente tenha sido finalizada.
+
+------------------------------------------------
+
+CALLBACKS
+- Uma das vertentes da programação assincrona é fazer ações que aconteçam depois de um tempo por meio de callbacks.
+- Callback é uma função que faz uma ação após algum acontecimento no código.
+- Podemos realizar um callback com a função 'setTimeout'.
+- É exeucutado em um ponto futuro do código.
+- A execução do código será executada de forma imediata, porém o 'setTimeout' será executado não.
+
+------------------------------------------------
+
+PROMISES
+- As promises são ações assincronas que podem produzir um valor em algum momento no código.
+- Uma forma de dizer a linguagem que um valor pode estar presente em um futuro do código.
+- O objeto das promises é 'Promise', 'resolve' é o metodo que resolve uma Promise, o 'then' é o que faz ela poder ser executada em um ponto futuro.
+(Promise, resolve, then)
+
+------------------------------------------------
+
+FALHAS NAS PROMISES
+- Uma Promise pode falhar, podemos reter esse erro com um método chamato 'catch';
+- Com ele podemos exibir o erro no console, por exemplo, e fazer o debug no código;
+
+------------------------------------------------
+
+REJEITANDO PROMISES
+- Além do resolve, há o metodo reject;
+- Que é quando determinada lógica não satisfaz nosso programa, então podemos ir para outra com o 'Reject', em vez do 'Resolve';
+- 'Resolve' e 'Reject' terminam a 'Promisse', ou seja, não podemos chamar mais o 'then', por exemplo;
+
+------------------------------------------------
+
+RESOLVENDO VÁRIAS 'PROMISES'
+- Com o método 'all', podemos resolver várias promessas de uma vez só.
+- Ou sej, passamos elas por array e quando a última for resolvida receberemos a resposta;
+
+------------------------------------------------
+
+ASYNC FUNCTIONS
+- Podemos criar funções assíncronas com a palavra reservada 'async'
+- Elas retornam uma 'Promise'
+- Se retornar algo, a promessa é resolvida, se der alguma 'exception' a promessa é rejeitada.
+
+------------------------------------------------
+
+AWAIT
+- Nas 'async' functions, podemos determinar uma instrução 'await';
+- Que vai esperar uma promise ser resolvida, para apresentar ou manipular os resultados;
+
+------------------------------------------------
+
+GENERATORS
+- 'Generators' funcionam semelhantes as Promises;
+- Onde ações podem ser pausadas e continuadas depois;
+- Caracterizadas pelo 'function' e 'yield', veja;
+- O yield pode salvar o estado da variável;
