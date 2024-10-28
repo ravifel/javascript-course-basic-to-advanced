@@ -1,0 +1,143 @@
+Aprender como o JavaScript interage com o browser e como aplicar em uma página web.
+
+Navegação, Efeitos, Troca de Elementos, etc..
+(Conseguimos fazer essas interações por meio do JavaScript).
+
+Apresentar quais os principais métodos que fazem essas interações.
+-> DOM e Navegador
+---------------------------------------------
+A WEB: Protocolos
+- Um protocolo é uma forma de comunicação entre computadores através da rede;
+- O http, serve para nós solicitarmos arquivos, imagens e etc (Hyper Text Transfer Protocol);
+- Entramos em sites graças ao protocolo HTTP;
+- SMTP: protocolos para enviar e-mail;
+- TCP: protocolo de transferência;
+
+http
+https
+---------------------------------------------
+A WEB: URL
+- URL: Uniform Resource Locator
+- A URL pode ser dividida em 3 partes: protocolo, servidor e arquivo.
+http://www.example.com.br/index.html
+- protocolo: http
+- servidor: www.example.com.br (pode-se dizer também que é o ip usado para acessa o servidor)
+- arquivo: index.html
+
+HTML 
+(HyperText Markup Language) é uma linguagem de marcação.
+Responsável pelos textos e elementos que vemos na tela ao acessar a página web
+Algumas Tags não possuem fechamento
+
+DOM -> Document Object Model
+Podemos acessar cada um dos elementos HTML por meio do JS, através da DOM
+O JS cria uma outra estrutura que a copia fiel do documento HTML. (Um é o espelho do outro)
+Então é possivel alterar o DOM.
+
+ENTENDENDO O DOM
+- Podemos mudar completamente uma página HTML através do DOM;
+- É possivel alterar: elementos, atributos, css;
+- Além de alterar podemos adicionar e também remover;
+- Além de ser possível criar eventos na página, como animações (click, scroll);
+- Tem uma complexidade maior do que o HTML;
+
+- o DOM é acessado a partir do 'document';
+---------------------------------------------
+--> A árvore do DOM
+
+- O documento HTML seria a árvore completa (Ele que dá acesso para todos os outros elementos);
+- A raiz da árvore é o Document (só há uma raiz);
+- Cada elemento da árvore chamamos de node (nó);
+- Conteúdos como texto são chamados de 'leaf' nodes (as folhas);
+
+- o DOM é como se fosse o pai de todos os elementos HTML.
+---------------------------------------------
+---> Movendo-se através do DOM
+
+- Podemos acessar todos os elementos a partir de document.body (Por ser a raiz);
+- A partir dele vamos entrando nos childNodes;
+- E depois acessando as propriedades que nos interessam;
+---------------------------------------------
+---> Encontrando elementos
+
+- Podemos encontrar elementos de uma forma mais fácil do que se movendo pelo DOM;
+- Como no HTML temos tags, classes e ids, o JavaScript nos possibilita utilizar estas caracteristicas para encontrar o que desejamos;
+- Há alguns métodos para isto: getElementByTagName, getElementById, getElementByClassName e também querySelector;
+- Iremos ver cada um deles em detalhes; 
+---------------------------------------------
+---> Encontrando elementos: por tag
+- Utilizamos o seguinte método para encontrar elementos pela tag;
+- document.getElementByTagName('h1');
+---------------------------------------------
+---> Encontrando elementos: por id
+- Utilizamos o seguinte método para encontrar elementos por id;
+- O id se refere a apenas um elemento;
+- É uma boa prática sempre manter o mesmo 'id' em uma mesma página;
+- document.getElementById('algum-id');
+---------------------------------------------
+---> Encontrando elementos: por classes
+- Utilizamos o seguinte método para encontrar elementos por classes.
+- Classes tem a estilização de forma mais organizada.
+- document.getElementsByClassename('alguma-classe');
+---------------------------------------------
+---> Encontrando elementos: por query
+- Um método que se assemelha a grande funcionalidade do jQuery;
+- Nos permitindo encontrar elementos especificos pelo seus seletores de CSS;
+- O que facilita muito nossa vida, veja:
+
+console.log(document.querySelector('#algum-id'));
+console.log(document.querySelector('.teste'));
+console.log(document.querySelector('h1'));
+---------------------------------------------
+---------------------------------------------
+Alterando o HTML
+- Podemos mudar quase tudo através da DOM;
+- Adicionar, remover e clonar elementos;
+- Podemos utilizar métodos como: insertBefore, appendChild e replaceChild;
+
+Alterando a DOM com o 'insertBefore'
+- Insere um nó antes do nó de referência do método;
+- Precisamos de um elemento para ser adicionado;
+- O elemento que terá o outro elemento adicionado antes dele;
+- E o elemento pai destes dois;
+
+let span = document.createElement("span");
+let el = document.querySelector("h1");
+let pai = el.parentNode;
+pai.insertBefore(span, el)
+---------------------------------------------
+Alterando a DOM com o appendChild
+- Adiciona um nó após todos os elementos do elemento pai especificado
+---------------------------------------------
+Alterando a DOM com replaceChild
+- Repóe um antigo elemento no DOM, com um novo;
+---------------------------------------------
+Criando nós de texto
+- Podemos criar um nó de texto puro e inserir em um elemento;
+---------------------------------------------
+Criando elementos
+- Podemos criar um nó de elemento com o createElement, e depois inserir no HTML.
+---------------------------------------------
+Modificando e lendo atributos
+- Podemos resgatar o valor de um atributo ou trocar com o JS;
+- Por exemplo o href de um 'a' ou o 'src' de um elemento 'img';
+- getAttribute pega o valor;
+- setAttribute atualiza o valor;
+---------------------------------------------
+Verificando altura e largura dop elemento
+- Com o JS também é possível verificar propriedades do elemento como 'altura' e 'largura';
+---------------------------------------------
+Posição do elemento na tela
+- Também é possível checar a posição do elemento na tela;
+- getBoundingClientRect nos da as posições de 'top', 'left', 'right', 'bottom' do elemento e outras informações.
+---------------------------------------------
+Estilizando com JS
+- Podemos também mudar as propriedades de estilo dos elementos do HTML com o JS.
+- Acessando a propriedade 'style' podemos fazer as modificações.
+- O estilo é manipulado direto na tag, ou seja, substitui o do CSS (Na maioria das vezes).
+---------------------------------------------
+Selecionar vários elementos com query
+- Para selecionar diversos elementos com query, podemos utilizar o método 'querySelectorAll';
+- Em vez de um, podemos pegar todos os elementos semelhantes com o selector do CSS;
+- Podemos acessar vários elementos de uma vez só;
+---------------------------------------------
