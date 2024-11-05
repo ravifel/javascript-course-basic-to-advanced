@@ -1,0 +1,46 @@
+Como acionar um evento
+- Devemos atrelar o evento a um elemento, por exemplo um botão;
+- Depois inserir um listener e o tipo de evento como argumento;
+- Aí o elemento responderá por este evento e, obviamente, os outros da página não.
+---------------------------------
+Removendo eventos
+- Da mesma forma que podemos adicionar eventos, podemos remover quando acharmos necessário.
+- Para isso utilizamos o método removeEventListener, onde passamos o evento e a função que o evento está escutando.
+---------------------------------
+Objeto do evento
+- Quando criamos eventos, temos a opção de utilizar um argumento opcional, que é chamado de objeto do evento;
+- Ele contém propriedades que podem ser utilizadas a nosso favor;
+- O objeto é criado pelo JavaScript automaticamente.
+---------------------------------
+Ações default
+- Muitos elementos/teclas já tem ações pré-definidas como clicar num link nos leva a outra página.
+- Podemos parar este evento default, e criar uma lógica diferente para o elemento em questão;
+---------------------------------
+Eventos de tecla (Key event)
+- Sempre que uma tecla é pressionada, são gerados 2 eventos: keyup e keydown;
+- Podemos realizar ações nestes eventos também;
+- Keyup é quando soltamos a tecla;
+- Keydown é quando apertamos;
+---------------------------------
+Eventos de Mouse
+- No mouse temos também eventos como mousedown e mouseup, semelhantes aos das teclas;
+- Dblclick para ativar com dois cliques;
+- Mousedown, Mouseup, Dblclick;
+- É possivel pegar o movimento do mouse;
+---------------------------------
+Eventos por Scroll
+- Podemos atrelar evento ao scroll da tela também, pelo evento scroll;
+- Por exemplo: podemos criar um elemento assim que o scroll atingir uma posição x;
+---------------------------------
+Eventos por foco
+- Quando focamos em um evento ou saíomos dele, podemos também atrelar um evento a esta ação;
+- "focus" para quando um elemento recebe foco e "blur" quando ele perder
+---------------------------------
+Evento de carregamento
+- Podemos atrelar um evento quando a página carrega, pelo evento load.
+- E antes do usuário fechar a página pelo evento 'beforeunload';
+---------------------------------
+Debounce
+- Um evento que dispara múltiplas vezes pode ser um problema para a o computador do cliente;
+- Por isso podemos fazer um debounce, que é um suavizador de evento, para não chamar o mesmo tantas vezes;
+- É criado um intervalo de tempo até a execução dos eventos.
